@@ -2,11 +2,11 @@
 Project Name: **Car Rental**                    
 Creation Date: **July 2023**
 
-Technologies used in the project:
-C# .NET, ASP.NET MVC,
-Entity, Identity framework - for working with database,
-Vertical slices - for grouping the project structure and methods,
-Patterns - CQRS, MediatR
+Technologies used in the project:<br>
+C# .NET, ASP.NET MVC,<br>
+Entity, Identity framework - for working with database,<br>
+Vertical slices - for grouping the project structure and methods,<br>
+Patterns - CQRS, MediatR<br>
 
 # Screenshots:
 ![Screenshot](Images/img1.png)
