@@ -1,0 +1,163 @@
+﻿@model List<WEB.Pages.Cars.Models.Cars>
+
+@{
+    List<string> gearBoxes = (List<string>)ViewBag.selectedGearBoxes;
+    List<string> engineTypes = (List<string>)ViewBag.selectedEngineTypes;
+    List<string> brands = (List<string>)ViewBag.selectedBrands;
+    string sorting = ViewBag.sorting;
+}
+<head>
+    <link rel="stylesheet" href="animate.min.css">
+</head>
+
+<script src="/js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+
+<div class="container">
+    <div class="row mt-2">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-2 mt-4">
+            <form action="/Car/Cars">
+                <div class="card bg-light">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Filters</h5>
+
+                        <div class="form-group text-center">
+                            <label class="fw-bold">Transmission</label>
+                            @foreach (var item in Model.Select(x => x.transmission_name).Distinct())
+                            {
+                                if (gearBoxes.Contains(item))
+                                {
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="@item" id="flexCheckDefault" name="selectedGearBoxes" checked="checked">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            @item
+                                        </label>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="@item" id="flexCheckDefault" name="selectedGearBoxes">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            @item
+                                        </label>
+                                    </div>
+                                }
+                            }
+                        </div>
+
+                        <div class="form-group text-center">
+                            <label class="fw-bold">Fuel Types</label>
+                            @foreach (var item in Model.Select(x => x.fuel_name).Distinct())
+                            {
+                                if (engineTypes.Contains(item))
+                                {
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="@item" id="flexCheckDefault" name="selectedEngineTypes" checked="checked">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            @item
+                                        </label>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="@item" id="flexCheckDefault" name="selectedEngineTypes">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            @item
+                                        </label>
+                                    </div>
+                                }
+                            }
+                        </div>
+
+                        <div class="form-group text-center">
+                            <label class="fw-bold">Car Body type</label>
+                            @foreach (var item in Model.Select(x => x.body_name).Distinct())
+                            {
+                                if (brands.Contains(item))
+                                {
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="@item" id="flexCheckDefault" name="selectedBrands" checked="checked">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            @item
+                                        </label>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="@item" id="flexCheckDefault" name="selectedBrands">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            @item
+                                        </label>
+                                    </div>
+                                }
+                            }
+                        </div>
+
+                        <div class="text-center mt-3">
+                            <button class="btn btn-primary" type="submit">Apply Filters</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fw-bold text-center mt-3">Sort</div>
+                @if (sorting == "cheapest")
+                {
+                    <div class="text-center mt-2">
+                        <button class="btn btn-primary" type="submit" value="" name="sorting">Cheapest</button>
+                    </div>
+                }
+                else
+                {
+                    <div class="text-center mt-2">
+                        <button class="btn btn-secondary" type="submit" value="cheapest" name="sorting">Cheapest</button>
+                    </div>
+                }
+                @if (sorting == "expensive")
+                {
+                    <div class="text-center mt-2">
+                        <button class="btn btn-primary" type="submit" value="" name="sorting">Expensive</button>
+                    </div>
+                }
+                else
+                {
+                    <div class="text-center mt-2">
+                        <button class="btn btn-secondary" type="submit" value="expensive" name="sorting">Expensive</button>
+                    </div>
+                }
+            </form>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-10">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                @foreach (var item in Model)
+                {
+                    <div class="col">
+                        <div class="card shadow-lg h-100">
+                            <img src="@item.imagepath" alt="Car Photo" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">@item.car_name</h5>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Seats: @item.num_seats</li>
+                                    <li class="list-group-item">Fuel Consumption: @item.fuel_name</li>
+                                    <li class="list-group-item">Drive: @item.drive_name</li>
+                                    <li class="list-group-item">Transmission: @item.transmission_name</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="text-muted">Price: $@item.price</span>
+                                    <a id="confirmButton" class="btn btn-outline-primary" href="@Url.Action("Rent", "Car", new { id = item.car_id })">Rent Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

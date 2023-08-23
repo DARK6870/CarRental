@@ -1,0 +1,36 @@
+﻿@model WEB.Pages.CarBody.BodyType
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div style="margin-left: 200px; margin-right: 200px;">
+    <b style="font-size: 40px">Edit</b>
+
+<h4>BodyType</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="EditCarBody">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="body_id" />
+            <div class="form-group">
+                <label asp-for="body_name" class="control-label"></label>
+                <input required maxlength="10" asp-for="body_name" class="form-control" />
+                <span asp-validation-for="body_name" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-2">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="IndexCarBody">Back to List</a>
+</div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

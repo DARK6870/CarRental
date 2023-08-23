@@ -1,0 +1,117 @@
+﻿@using Microsoft.AspNetCore.Identity
+
+@inject UserManager<IdentityUser> userManager
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WEB</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="~/WEB.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/animate.css" asp-append-version="true" />
+    <link  rel="shortcut icon" type="image/x-icon" href="/images/rent.png"/>
+    <script src="~/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+<body>
+    <header class="mи-0">
+        <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" asp-area="" asp-controller="Home" asp-action="Index">Car Rental</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">
+                                Home
+                                <span class="visually-hidden">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Car" asp-action="Cars">Cars</a>
+                        </li>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            var user = await userManager.GetUserAsync(User);
+
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Logout">Logout</a>
+                            </li>
+                            try{
+                            if (await userManager.IsInRoleAsync(user, "Admin"))
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" asp-area="" asp-controller="Cars" asp-action="Create">Manage Cars</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Admin</a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item text-white" asp-area="" asp-controller="CarTypes" asp-action="IndexCarType">Vehicle Type</a>
+                                        <a class="dropdown-item text-white" asp-area="" asp-controller="Transmissions" asp-action="IndexTransmission">Transmission Type</a>
+                                        <a class="dropdown-item text-white" asp-area="" asp-controller="Reservations" asp-action="IndexRes">Reservation Status</a>
+                                        <a class="dropdown-item text-white" asp-area="" asp-controller="Fuels" asp-action="IndexFuel">Fuel Type</a>
+                                        <a class="dropdown-item text-white" asp-area="" asp-controller="Drive_type" asp-action="IndexDriveType">Drive Type</a>
+                                        <a class="dropdown-item text-white" asp-area="" asp-controller="BodyTypes" asp-action="IndexCarBody">Car Body</a>
+                                            <a class="dropdown-item text-white" asp-area="" asp-controller="Orders" asp-action="IndexOrder">Orders</a>
+                                        <div class="dropdown-divider"></div>
+                                    </div>
+                                </li>
+                            }
+                            }
+                            catch
+                            {
+                            }
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-white" asp-area="" asp-controller="Account" asp-action="Login">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" asp-area="" asp-controller="Account" asp-action="Register">Register</a>
+                            </li>
+                        }
+
+                    </ul>
+                    <div class="ms-auto">
+                        <form class="d-flex">
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                <div class="d-flex align-items-center">
+                                    <a class="text-white me-2" asp-area="" asp-controller="Account" asp-action="Profile" style="text-decoration: none">@User.Identity.Name</a>
+                                    <img class="rounded-circle avatar" src="/images/user_photo.png" alt="Avatar" style="width: 35px;">
+                                </div>
+                            }
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid px-0 mt-0">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted mt-5">
+        <div class="container">
+            &copy; 2023 - WEB - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

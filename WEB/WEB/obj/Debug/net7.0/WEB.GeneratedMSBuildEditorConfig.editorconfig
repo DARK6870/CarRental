@@ -1,0 +1,189 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = WEB
+build_property.RootNamespace = WEB
+build_property.ProjectDir = C:\Users\tsymb\Desktop\Rent-main\WEBB\WEB\WEB\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\tsymb\Desktop\Rent-main\WEBB\WEB\WEB
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/tsymb/Desktop/Rent-main/WEBB/WEB/WEB/Pages/Account/Views/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxWaWV3c1xMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tsymb/Desktop/Rent-main/WEBB/WEB/WEB/Pages/Account/Views/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxWaWV3c1xQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tsymb/Desktop/Rent-main/WEBB/WEB/WEB/Pages/Account/Views/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxWaWV3c1xSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tsymb/Desktop/Rent-main/WEBB/WEB/WEB/Pages/CarBody/Views/CreateCarBody.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FyQm9keVxWaWV3c1xDcmVhdGVDYXJCb2R5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tsymb/Desktop/Rent-main/WEBB/WEB/WEB/Pages/CarBody/Views/DeleteCarBody.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FyQm9keVxWaWV3c1xEZWxldGVDYXJCb2R5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tsymb/Desktop/Rent-main/WEBB/WEB/WEB/Pages/CarBody/Views/EditCarBody.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FyQm9keVxWaWV3c1xFZGl0Q2FyQm9keS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tsymb/Desktop/Rent-main/WEBB/WEB/WEB/Pages/CarBody/Views/IndexCarBody.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FyQm9keVxWaWV3c1xJbmRleENhckJvZHkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tsymb/Desktop/Rent-main/WEBB/WEB/WEB/Pages/Cars/Views/Cars.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2Fyc1xWaWV3c1xDYXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tsymb/Desktop/Rent-main/WEBB/WEB/WEB/Pages/Cars/Views/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2Fyc1xWaWV3c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tsymb/Desktop/Rent-main/WEBB/WEB/WEB/Pages/Cars/Views/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2Fyc1xWaWV3c1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tsymb/Desktop/Rent-main/WEBB/WEB/WEB/Pages/Cars/Views/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2Fyc1xWaWV3c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tsymb/Desktop/Rent-main/WEBB/WEB/WEB/Pages/Cars/Views/IndexCar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2Fyc1xWaWV3c1xJbmRleENhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tsymb/Desktop/Rent-main/WEBB/WEB/WEB/Pages/Cars/Views/PlaceOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2Fyc1xWaWV3c1xQbGFjZU9yZGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tsymb/Desktop/Rent-main/WEBB/WEB/WEB/Pages/Cars/Views/Rent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2Fyc1xWaWV3c1xSZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tsymb/Desktop/Rent-main/WEBB/WEB/WEB/Pages/CarType/Views/CreateCarType.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FyVHlwZVxWaWV3c1xDcmVhdGVDYXJUeXBlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tsymb/Desktop/Rent-main/WEBB/WEB/WEB/Pages/CarType/Views/DeleteCarType.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FyVHlwZVxWaWV3c1xEZWxldGVDYXJUeXBlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tsymb/Desktop/Rent-main/WEBB/WEB/WEB/Pages/CarType/Views/EditCarType.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FyVHlwZVxWaWV3c1xFZGl0Q2FyVHlwZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tsymb/Desktop/Rent-main/WEBB/WEB/WEB/Pages/CarType/Views/IndexCarType.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FyVHlwZVxWaWV3c1xJbmRleENhclR5cGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tsymb/Desktop/Rent-main/WEBB/WEB/WEB/Pages/DriveType/Views/CreateDriveType.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRHJpdmVUeXBlXFZpZXdzXENyZWF0ZURyaXZlVHlwZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tsymb/Desktop/Rent-main/WEBB/WEB/WEB/Pages/DriveType/Views/DeleteDriveType.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRHJpdmVUeXBlXFZpZXdzXERlbGV0ZURyaXZlVHlwZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tsymb/Desktop/Rent-main/WEBB/WEB/WEB/Pages/DriveType/Views/EditDriveType.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRHJpdmVUeXBlXFZpZXdzXEVkaXREcml2ZVR5cGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tsymb/Desktop/Rent-main/WEBB/WEB/WEB/Pages/DriveType/Views/IndexDriveType.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRHJpdmVUeXBlXFZpZXdzXEluZGV4RHJpdmVUeXBlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tsymb/Desktop/Rent-main/WEBB/WEB/WEB/Pages/Fuel/Views/CreateFuel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRnVlbFxWaWV3c1xDcmVhdGVGdWVsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tsymb/Desktop/Rent-main/WEBB/WEB/WEB/Pages/Fuel/Views/DeleteFuel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRnVlbFxWaWV3c1xEZWxldGVGdWVsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tsymb/Desktop/Rent-main/WEBB/WEB/WEB/Pages/Fuel/Views/EditFuel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRnVlbFxWaWV3c1xFZGl0RnVlbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tsymb/Desktop/Rent-main/WEBB/WEB/WEB/Pages/Fuel/Views/IndexFuel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRnVlbFxWaWV3c1xJbmRleEZ1ZWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tsymb/Desktop/Rent-main/WEBB/WEB/WEB/Pages/Home/Views/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVxWaWV3c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tsymb/Desktop/Rent-main/WEBB/WEB/WEB/Pages/Home/Views/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVxWaWV3c1xQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tsymb/Desktop/Rent-main/WEBB/WEB/WEB/Pages/OrderPage/Views/EditOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJQYWdlXFZpZXdzXEVkaXRPcmRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tsymb/Desktop/Rent-main/WEBB/WEB/WEB/Pages/OrderPage/Views/IndexOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJQYWdlXFZpZXdzXEluZGV4T3JkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tsymb/Desktop/Rent-main/WEBB/WEB/WEB/Pages/Reservation/Views/CreateRes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzZXJ2YXRpb25cVmlld3NcQ3JlYXRlUmVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tsymb/Desktop/Rent-main/WEBB/WEB/WEB/Pages/Reservation/Views/DeleteRes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzZXJ2YXRpb25cVmlld3NcRGVsZXRlUmVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tsymb/Desktop/Rent-main/WEBB/WEB/WEB/Pages/Reservation/Views/EditRes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzZXJ2YXRpb25cVmlld3NcRWRpdFJlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tsymb/Desktop/Rent-main/WEBB/WEB/WEB/Pages/Reservation/Views/IndexRes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVzZXJ2YXRpb25cVmlld3NcSW5kZXhSZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tsymb/Desktop/Rent-main/WEBB/WEB/WEB/Pages/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tsymb/Desktop/Rent-main/WEBB/WEB/WEB/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tsymb/Desktop/Rent-main/WEBB/WEB/WEB/Pages/Transmission/Views/CreateTransmission.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHJhbnNtaXNzaW9uXFZpZXdzXENyZWF0ZVRyYW5zbWlzc2lvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tsymb/Desktop/Rent-main/WEBB/WEB/WEB/Pages/Transmission/Views/DeleteTransmission.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHJhbnNtaXNzaW9uXFZpZXdzXERlbGV0ZVRyYW5zbWlzc2lvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tsymb/Desktop/Rent-main/WEBB/WEB/WEB/Pages/Transmission/Views/EditTransmission.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHJhbnNtaXNzaW9uXFZpZXdzXEVkaXRUcmFuc21pc3Npb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tsymb/Desktop/Rent-main/WEBB/WEB/WEB/Pages/Transmission/Views/IndexTransmission.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHJhbnNtaXNzaW9uXFZpZXdzXEluZGV4VHJhbnNtaXNzaW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tsymb/Desktop/Rent-main/WEBB/WEB/WEB/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tsymb/Desktop/Rent-main/WEBB/WEB/WEB/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tsymb/Desktop/Rent-main/WEBB/WEB/WEB/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-f2y1v1bc4a

@@ -1,0 +1,35 @@
+﻿@model WEB.Pages.Transmission.Transmission
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="f" style="margin-left: 200px; margin-right: 200px;">
+    <b style="font-size: 40px">Create</b>
+
+<h4>Transmission</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+            <form asp-action="CreateTransmission" onsubmit="return confirm('Are you sure you want to do this?')">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="transmission_name" class="control-label"></label>
+                <input required maxlength="10" asp-for="transmission_name" class="form-control" />
+                <span asp-validation-for="transmission_name" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-2">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+        <a asp-action="IndexTransmission">Back to List</a>
+</div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

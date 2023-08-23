@@ -1,0 +1,65 @@
+﻿@model WEB.Pages.OrderPage.Models.Order
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="f" style="margin-left: 200px; margin-right: 200px;">
+    <b style="font-size: 40px">Edit</b>
+
+<h4>Order</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+            <form asp-action="EditOrder" onsubmit="return confirm('Are you sure you want to do this?')">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input  type="hidden" asp-for="order_id" />
+            <div class="form-group">
+                <label asp-for="status_id" class="control-label"></label>
+                <input required asp-for="status_id" class="form-control" />
+                <span asp-validation-for="status_id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AppUserId" class="control-label"></label>
+                <input required asp-for="AppUserId" class="form-control" />
+                <span asp-validation-for="AppUserId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Phone" class="control-label"></label>
+                    <input required asp-for="Phone" class="form-control" />
+                    <span asp-validation-for="Phone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="start_day" class="control-label"></label>
+                <input required asp-for="start_day" class="form-control" />
+                <span asp-validation-for="start_day" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="end_day" class="control-label"></label>
+                <input required asp-for="end_day" class="form-control" />
+                <span asp-validation-for="end_day" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="car_id" class="control-label"></label>
+                <input required asp-for="car_id" class="form-control" />
+                <span asp-validation-for="car_id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="total_price" class="control-label"></label>
+                <input required asp-for="total_price" class="form-control" />
+                <span asp-validation-for="total_price" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-2">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="IndexOrder">Back to List</a>
+</div>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

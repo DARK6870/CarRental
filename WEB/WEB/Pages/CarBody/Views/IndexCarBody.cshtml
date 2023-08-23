@@ -1,0 +1,41 @@
+﻿@model IEnumerable<WEB.Pages.CarBody.BodyType>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div style="margin-left: 200px; margin-right: 200px;">
+    <b style="font-size: 40px">Data</b>
+
+<p>
+    <a asp-action="CreateCarBody">Create New</a>
+</p>
+    <table class="table table-striped table-bordered rounded custom-table" style="border-radius: 10px; overflow: hidden;">
+    <thead>
+        <tr class="table-primary">
+            <th>
+                @Html.DisplayNameFor(model => model.body_id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.body_name)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.body_id)
+            </td><td>
+                @Html.DisplayFor(modelItem => item.body_name)
+            </td>
+            <td>
+                <a asp-action="EditCarBody" asp-route-id="@item.body_id">Edit</a> |
+                <a asp-action="DeleteCarBody" asp-route-id="@item.body_id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</div>

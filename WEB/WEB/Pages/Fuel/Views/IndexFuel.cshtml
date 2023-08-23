@@ -1,0 +1,41 @@
+﻿@model IEnumerable<WEB.Pages.Fuel.Fuel>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div style="margin-left: 200px; margin-right: 200px;">
+    <b style="font-size: 40px">Data</b>
+
+<p>
+    <a asp-action="CreateFuel">Create New</a>
+</p>
+    <table class="table table-striped table-bordered rounded custom-table" style="border-radius: 10px; overflow: hidden;">
+    <thead>
+            <tr class="table-primary">
+            <th>
+                @Html.DisplayNameFor(model => model.fuel_id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fuel_name)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.fuel_id)
+            </td> 
+            <td>
+                @Html.DisplayFor(modelItem => item.fuel_name)
+            </td>
+            <td>
+                <a asp-action="EditFuel" asp-route-id="@item.fuel_id">Edit</a> |
+                <a asp-action="DeleteFuel" asp-route-id="@item.fuel_id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</div>

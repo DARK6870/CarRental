@@ -1,0 +1,89 @@
+﻿@model IEnumerable<WEB.Pages.Cars.Models.Car>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="f" style="margin-left: 200px; margin-right: 200px;">
+    <b style="font-size: 40px">Data</b>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+    <table class="table table-striped table-bordered rounded custom-table" style="border-radius: 10px; overflow: hidden;">
+    <thead>
+        <tr class="table-primary">
+                <th>
+                    @Html.DisplayNameFor(model => model.car_id)
+                </th>
+            <th>
+                @Html.DisplayNameFor(model => model.car_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.type_id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.body_id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.transmission_id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.num_seats)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.fuel_id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.drive_id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.imagepath)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.car_id)
+                    </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.car_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.type_id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.body_id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.transmission_id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.num_seats)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.fuel_id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.drive_id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.imagepath)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.car_id">Edit</a>
+                <a asp-action="Delete" asp-route-id="@item.car_id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</div>

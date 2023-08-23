@@ -1,0 +1,43 @@
+﻿@model IEnumerable<WEB.Pages.CarType.CarType>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<div class="f" style="margin-left: 200px; margin-right: 200px;">
+    <b style="font-size: 40px">Data</b>
+
+<p>
+    <a asp-action="CreateCarType">Create New</a>
+</p>
+    <table class="table table-striped table-bordered rounded custom-table" style="border-radius: 10px; overflow: hidden;">
+    <thead>
+        <tr class="table-primary">
+            <th>
+                @Html.DisplayNameFor(model => model.type_id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.car_type_name)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.type_id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.car_type_name)
+            </td>
+            <td>
+                <a asp-action="EditCarType" asp-route-id="@item.type_id">Edit</a> |
+                <a asp-action="DeleteCarType" asp-route-id="@item.type_id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</div>

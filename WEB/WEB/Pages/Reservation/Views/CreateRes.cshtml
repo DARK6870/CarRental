@@ -1,0 +1,34 @@
+﻿@model WEB.Pages.Reservation.Reservation
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="f" style="margin-left: 200px; margin-right: 200px;">
+    <b style="font-size: 40px">Create</b>
+<h4>Reservation</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+            <form asp-action="CreateRes" onsubmit="return confirm('Are you sure you want to do this?')">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="status_name" class="control-label"></label>
+                <input required maxlength="15" asp-for="status_name" class="form-control" />
+                <span asp-validation-for="status_name" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-2">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="IndexRes">Back to List</a>
+</div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

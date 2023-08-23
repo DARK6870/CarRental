@@ -1,0 +1,68 @@
+﻿@model IEnumerable<WEB.Pages.OrderPage.Models.CarOrder>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="f" style="margin-left: 200px; margin-right: 200px;">
+    <b style="font-size: 40px">Data</b>
+
+    <table class="table table-striped table-bordered rounded custom-table" style="border-radius: 10px; overflow: hidden;">
+    <thead>
+        <tr class="table-primary">
+                <th>
+                    @Html.DisplayNameFor(model => model.order_id)
+                </th>
+            <th>
+                @Html.DisplayNameFor(model => model.status_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Phone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.start_day)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.end_day)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.car_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.total_price)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.order_id)
+                    </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.status_name)
+            </td>
+            <td>
+                        @Html.DisplayFor(modelItem => item.Phone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.start_day)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.end_day)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.car_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.total_price)
+            </td>
+            <td>
+                <a asp-action="EditOrder" asp-route-id="@item.order_id">Edit</a> |
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</div>
